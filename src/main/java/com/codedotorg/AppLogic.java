@@ -82,13 +82,7 @@ public class AppLogic {
  * @return the new total of all products in the cart
  */
 public double getNewTotal() {
-    double total = 0.0;
-    
-    for (Product product : cart.getItemsListView().getItems()) {
-        total += product.getPrice();
-    }
-    
-    return total;
+    return cart.getTotalPrice();
 }
 
 
